@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Problem Solver</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Knapsack Problem Solver for Sheet Cutting</h1>
+        <form id="inputForm">
+            <h2>Sheet Dimensions</h2>
+            <div id="sheetsContainer">
+                <!-- Sheets will be dynamically added here -->
+            </div>
+            <button type="button" id="addSheet">Add Another Sheet</button>
+
+            <h2>Components</h2>
+            <div id="componentsContainer">
+                <!-- Components will be dynamically added here -->
+            </div>
+            <button type="button" id="addComponent">Add Another Component</button>
+
+            <h2>Settings</h2>
+            <label for="tolerance">Tolerance (mm):</label>
+            <input type="number" id="tolerance" value="0" required>
+
+            <button type="submit">Optimize Layout</button>
+        </form>
+        <div class="canvas-container" id="canvasContainer"></div>
+        <div id="output"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
